@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NeuroSense AI | EEG Seizure Detection</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🧠
+        </div>
+
+        <div>
+            <h2>NeuroSense AI</h2>
+            <span>EEG Analysis System</span>
+        </div>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <button
+            class="nav-item active"
+            onclick="showSection('dashboard')">
+
+            🏠
+            <span>Dashboard</span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            onclick="showSection('analysis')">
+
+            🧠
+            <span>EEG Analysis</span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            onclick="showSection('results')">
+
+            📊
+            <span>Results</span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            onclick="showSection('models')">
+
+            🤖
+            <span>Model Comparison</span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            onclick="showSection('xai')">
+
+            🔍
+            <span>Explainable AI</span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            onclick="showSection('hospitals')">
+
+            🏥
+            <span>Hospitals</span>
+
+        </button>
+
+    </nav>
+
+
+    <div class="sidebar-footer">
+
+        <div class="backend-status">
+
+            <span
+                id="backendDot"
+                class="status-dot">
+            </span>
+
+            <span id="backendStatus">
+                Checking backend...
+            </span>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content">
+
+
+<!-- =====================================================
+     TOP HEADER
+===================================================== -->
+
+<header class="topbar">
+
+    <div>
+
+        <p class="eyebrow">
+            AI-DRIVEN EEG ANALYSIS
+        </p>
+
+        <h1>
+            NeuroSense AI
+        </h1>
+
+        <p class="subtitle">
+            Automated epileptic seizure screening using
+            Machine Learning and Deep Learning.
+        </p>
+
+    </div>
+
+
+    <div class="system-status">
+
+        <span class="status-dot online"></span>
+
+        <span>
+            AI System Online
+        </span>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     DASHBOARD
+===================================================== -->
+
+<section
+    id="dashboard"
+    class="page-section active">
+
+
+    <div class="welcome-card">
+
+        <div>
+
+            <p class="eyebrow">
+                EEG INTELLIGENCE PLATFORM
+            </p>
+
+            <h2>
+                AI-Powered EEG Signal Analysis
+            </h2>
+
+            <p>
+                Upload EEG data to analyze brain-wave
+                patterns and identify patterns associated
+                with epileptic seizures.
+            </p>
+
+            <button
+                class="primary-btn"
+                onclick="showSection('analysis')">
+
+                🧠 Start EEG Analysis
+
+            </button>
+
+        </div>
+
+
+        <div class="brain-graphic">
+            🧠
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         STATISTICS
+    ================================================== -->
+
+    <div class="stats-grid">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🎯
+            </div>
+
+            <div>
+
+                <span>
+                    CNN-LSTM Accuracy
+                </span>
+
+                <strong>
+                    98.09%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📈
+            </div>
+
+            <div>
+
+                <span>
+                    CNN-LSTM F1 Score
+                </span>
+
+                <strong>
+                    95.23%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📊
+            </div>
+
+            <div>
+
+                <span>
+                    EEG Samples
+                </span>
+
+                <strong>
+                    11,500
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <span>
+                    Models Compared
+                </span>
+
+                <strong>
+                    4
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         PROJECT PIPELINE
+    ================================================== -->
+
+    <div class="panel">
+
+        <p class="eyebrow">
+            SYSTEM PIPELINE
+        </p>
+
+        <h2>
+            NeuroSense AI Workflow
+        </h2>
+
+
+        <div class="pipeline">
+
+
+            <div class="pipeline-step">
+
+                <div class="pipeline-number">
+                    1
+                </div>
+
+                <h3>
+                    EEG Input
+                </h3>
+
+                <p>
+                    Upload EEG CSV dataset.
+                </p>
+
+            </div>
+
+
+            <div class="pipeline-arrow">
+                →
+            </div>
+
+
+            <div class="pipeline-step">
+
+                <div class="pipeline-number">
+                    2
+                </div>
+
+                <h3>
+                    Preprocessing
+                </h3>
+
+                <p>
+                    Clean and normalize signals.
+                </p>
+
+            </div>
+
+
+            <div class="pipeline-arrow">
+                →
+            </div>
+
+
+            <div class="pipeline-step">
+
+                <div class="pipeline-number">
+                    3
+                </div>
+
+                <h3>
+                    Feature Extraction
+                </h3>
+
+                <p>
+                    Extract EEG signal features.
+                </p>
+
+            </div>
+
+
+            <div class="pipeline-arrow">
+                →
+            </div>
+
+
+            <div class="pipeline-step">
+
+                <div class="pipeline-number">
+                    4
+                </div>
+
+                <h3>
+                    AI Models
+                </h3>
+
+                <p>
+                    ML and CNN-LSTM analysis.
+                </p>
+
+            </div>
+
+
+            <div class="pipeline-arrow">
+                →
+            </div>
+
+
+            <div class="pipeline-step">
+
+                <div class="pipeline-number">
+                    5
+                </div>
+
+                <h3>
+                    Prediction
+                </h3>
+
+                <p>
+                    Screening result.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     EEG ANALYSIS
+===================================================== -->
+
+<section
+    id="analysis"
+    class="page-section">
+
+
+    <div class="section-header">
+
+        <div>
+
+            <p class="eyebrow">
+                EEG ANALYSIS
+            </p>
+
+            <h2>
+                Upload EEG Dataset
+            </h2>
+
+            <p>
+                Upload a CSV file containing EEG signal
+                samples for analysis.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         PATIENT DETAILS
+    ================================================== -->
+
+    <div class="panel">
+
+        <p class="eyebrow">
+            PATIENT INFORMATION
+        </p>
+
+        <h2>
+            Patient Details
+        </h2>
+
+        <p class="helper-text">
+            Patient information is used for the screening
+            report and is not sent to the AI model.
+        </p>
+
+
+        <div class="form-grid">
+
+
+            <div class="form-group">
+
+                <label>
+                    Patient Name
+                </label>
+
+                <input
+                    type="text"
+                    id="patientName"
+                    placeholder="Enter patient name">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Patient ID
+                </label>
+
+                <input
+                    type="text"
+                    id="patientId"
+                    placeholder="Enter patient ID">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Age
+                </label>
+
+                <input
+                    type="number"
+                    id="patientAge"
+                    placeholder="Age"
+                    min="0"
+                    max="120">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Sex
+                </label>
+
+                <select id="patientSex">
+
+                    <option value="">
+                        Select
+                    </option>
+
+                    <option value="Male">
+                        Male
+                    </option>
+
+                    <option value="Female">
+                        Female
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone
+                </label>
+
+                <input
+                    type="tel"
+                    id="patientPhone"
+                    placeholder="Phone number">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Patient Location
+                </label>
+
+                <input
+                    type="text"
+                    id="patientLocation"
+                    placeholder="City / Area">
+
+            </div>
+
+        </div>
+
+
+        <div class="location-controls">
+
+            <button
+                class="secondary-btn"
+                onclick="getPatientLocation()">
+
+                📍 Use My Location
+
+            </button>
+
+
+            <span id="patientLocationStatus">
+                Location not detected
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         DATASET UPLOAD
+    ================================================== -->
+
+    <div class="panel">
+
+        <p class="eyebrow">
+            EEG DATASET
+        </p>
+
+        <h2>
+            Upload EEG CSV
+        </h2>
+
+
+        <div
+            class="upload-box"
+            id="uploadBox">
+
+
+            <div class="upload-icon">
+                📁
+            </div>
+
+
+            <h3>
+                Upload EEG Dataset
+            </h3>
+
+
+            <p>
+                Select your EEG CSV file containing
+                X1–X178 signal columns.
+            </p>
+
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".csv"
+                hidden>
+
+
+            <button
+                class="primary-btn"
+                onclick="document.getElementById('fileInput').click()">
+
+                Choose EEG Dataset
+
+            </button>
+
+
+            <p
+                id="fileName"
+                class="file-name">
+
+                No file selected
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Dataset information -->
+
+        <div
+            class="dataset-info"
+            id="datasetInfo">
+
+            <div>
+
+                <span>
+                    File
+                </span>
+
+                <strong id="datasetFile">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Samples
+                </span>
+
+                <strong id="datasetSamples">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    EEG Channels
+                </span>
+
+                <strong id="datasetChannels">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Signal Mean
+                </span>
+
+                <strong id="signalMean">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="analyze-btn"
+            id="analyzeButton"
+            onclick="analyzeEEG()">
+
+            🧠 Analyze EEG Dataset
+
+        </button>
+
+
+        <div
+            id="analysisStatus"
+            class="analysis-status">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         EEG WAVEFORM
+    ================================================== -->
+
+    <div class="panel">
+
+        <p class="eyebrow">
+            UPLOADED EEG SIGNAL
+        </p>
+
+        <h2>
+            EEG Signal Waveform
+        </h2>
+
+        <p
+            id="waveformInfo"
+            class="helper-text">
+
+            Upload an EEG CSV file to display
+            the actual waveform.
+
+        </p>
+
+
+        <div class="waveform-container">
+
+            <canvas
+                id="eegWaveform"
+                width="1200"
+                height="450">
+
+            </canvas>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         EEG DATA ANALYSIS
+    ================================================== -->
+
+    <div class="panel">
+
+        <p class="eyebrow">
+            SIGNAL ANALYSIS
+        </p>
+
+        <h2>
+            EEG Data Analysis
+        </h2>
+
+
+        <div class="analysis-grid">
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Minimum
+                </span>
+
+                <strong id="signalMin">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Maximum
+                </span>
+
+                <strong id="signalMax">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Mean
+                </span>
+
+                <strong id="signalMean2">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Standard Deviation
+                </span>
+
+                <strong id="signalStd">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Energy
+                </span>
+
+                <strong id="signalEnergy">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Zero Crossings
+                </span>
+
+                <strong id="zeroCrossings">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Samples
+                </span>
+
+                <strong id="analysisSamples">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="analysis-item">
+
+                <span>
+                    Quality
+                </span>
+
+                <strong id="signalQuality">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         PREDICTION
+    ================================================== -->
+
+    <div class="panel result-panel">
+
+        <p class="eyebrow">
+            AI PREDICTION
+        </p>
+
+        <h2>
+            EEG Screening Result
+        </h2>
+
+
+        <div class="prediction-box">
+
+
+            <div>
+
+                <span>
+                    Prediction
+                </span>
+
+                <strong
+                    id="prediction"
+                    class="prediction-value">
+
+                    Waiting for analysis
+
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Confidence
+                </span>
+
+                <strong id="confidence">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Seizure Probability
+                </span>
+
+                <strong id="seizureProbability">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Samples Analyzed
+                </span>
+
+                <strong id="samplesAnalyzed">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         ADAPTIVE MODEL
+    ================================================== -->
+
+    <div class="panel">
+
+        <p class="eyebrow">
+            ADAPTIVE AI
+        </p>
+
+        <h2>
+            Multi-Model Decision
+        </h2>
+
+
+        <div
+            id="adaptiveResult"
+            class="adaptive-result">
+
+            Run EEG analysis to view
+            multi-model agreement.
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     RESULTS
+===================================================== -->
+
+<section
+    id="results"
+    class="page-section">
+
+
+    <div class="section-header">
+
+        <p class="eyebrow">
+            RESULTS
+        </p>
+
+        <h2>
+            EEG Analysis Results
+        </h2>
+
+    </div>
+
+
+    <div class="panel">
+
+        <div class="result-summary">
+
+
+            <div class="result-main">
+
+                <span>
+                    Final Screening Result
+                </span>
+
+                <h1 id="resultPrediction">
+                    —
+                </h1>
+
+            </div>
+
+
+            <div class="result-confidence">
+
+                <span>
+                    Confidence
+                </span>
+
+                <strong id="resultConfidence">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="result-message"
+             id="resultMessage">
+
+            Upload and analyze an EEG dataset
+            to generate results.
+
+        </div>
+
+
+        <div class="report-actions">
+
+            <button
+                class="primary-btn"
+                onclick="downloadReport()">
+
+                📄 Download Report
+
+            </button>
+
+
+            <button
+                class="secondary-btn"
+                onclick="shareResult()">
+
+                📤 Share Result
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MODEL COMPARISON
+===================================================== -->
+
+<section
+    id="models"
+    class="page-section">
+
+
+    <div class="section-header">
+
+        <p class="eyebrow">
+            MACHINE LEARNING
+        </p>
+
+        <h2>
+            Model Comparison
+        </h2>
+
+        <p>
+            Comparison of the trained ML and deep learning
+            models used in NeuroSense AI.
+        </p>
+
+    </div>
+
+
+    <div class="panel">
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Model
+                        </th>
+
+                        <th>
+                            Accuracy
+                        </th>
+
+                        <th>
+                            Precision
+                        </th>
+
+                        <th>
+                            Recall
+                        </th>
+
+                        <th>
+                            F1 Score
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="modelTable">
+
+                    <tr>
+
+                        <td>
+                            Random Forest
+                        </td>
+
+                        <td>
+                            83.43%
+                        </td>
+
+                        <td>
+                            58.11%
+                        </td>
+
+                        <td>
+                            61.52%
+                        </td>
+
+                        <td>
+                            59.77%
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            SVM
+                        </td>
+
+                        <td>
+                            57.48%
+                        </td>
+
+                        <td>
+                            29.44%
+                        </td>
+
+                        <td>
+                            80.65%
+                        </td>
+
+                        <td>
+                            43.14%
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            XGBoost
+                        </td>
+
+                        <td>
+                            85.96%
+                        </td>
+
+                        <td>
+                            74.91%
+                        </td>
+
+                        <td>
+                            44.78%
+                        </td>
+
+                        <td>
+                            56.05%
+                        </td>
+
+                    </tr>
+
+
+                    <tr class="best-model">
+
+                        <td>
+                            CNN-LSTM
+                        </td>
+
+                        <td>
+                            98.09%
+                        </td>
+
+                        <td>
+                            95.02%
+                        </td>
+
+                        <td>
+                            95.43%
+                        </td>
+
+                        <td>
+                            95.23%
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EXPLAINABLE AI
+===================================================== -->
+
+<section
+    id="xai"
+    class="page-section">
+
+
+    <div class="section-header">
+
+        <p class="eyebrow">
+            EXPLAINABLE AI
+        </p>
+
+        <h2>
+            EEG Signal Explanation
+        </h2>
+
+        <p>
+            Signal-level information used by the AI system
+            to support the screening result.
+        </p>
+
+    </div>
+
+
+    <div class="panel">
+
+        <div
+            id="xaiContent"
+            class="xai-content">
+
+            <p>
+                Analyze an EEG dataset to generate
+                explainability information.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     HOSPITALS
+===================================================== -->
+
+<section
+    id="hospitals"
+    class="page-section">
+
+
+    <div class="section-header">
+
+        <p class="eyebrow">
+            MEDICAL REFERRAL
+        </p>
+
+        <h2>
+            🏥 Nearby Neurology & Epilepsy Hospitals
+        </h2>
+
+        <p>
+            Find hospitals and neurology/epilepsy services
+            for further medical evaluation.
+        </p>
+
+    </div>
+
+
+
+    <div class="panel">
+
+
+        <button
+            class="analyze-btn"
+            onclick="findHospitals()"
+            id="locationButton">
+
+            📍 Find Hospitals Near Me
+
+        </button>
+
+
+        <div
+            id="locationStatus"
+            class="location-status">
+
+            Location has not been detected.
+
+        </div>
+
+
+        <div
+            class="hospital-grid"
+            id="hospitalList">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         MEDICAL GUIDANCE
+    ================================================== -->
+
+    <div class="panel emergency-panel">
+
+        <p class="eyebrow">
+            IMPORTANT
+        </p>
+
+        <h2>
+            Medical Guidance
+        </h2>
+
+        <p>
+            NeuroSense AI is intended as an AI-based
+            EEG screening aid. It does not provide a
+            medical diagnosis.
+        </p>
+
+        <p>
+            If a patient is experiencing an active seizure,
+            severe symptoms, loss of consciousness, injury,
+            breathing difficulty, or another emergency,
+            seek immediate emergency medical care.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <p>
+        NeuroSense AI —
+        AI-Driven EEG Signal Analysis for Automated
+        Epileptic Seizure Detection
+    </p>
+
+    <p>
+        Screening aid only • Not a medical diagnosis
+    </p>
+
+</footer>
+
+
+</main>
+
+</body>
+
+</html>
